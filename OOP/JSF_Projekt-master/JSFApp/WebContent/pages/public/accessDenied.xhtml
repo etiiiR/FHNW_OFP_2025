@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+
+
+<h:body>
+	<h:form id="form">
+		<h1>
+			<h:outputText value="#{bunlde.missingPermissions}" />
+		</h1>
+		<h2>
+			<h:outputText value="Gehen Sie auf sofortigen Weg zürck an den Start und ziehen Sie nicht 200 ein. BY MONOPOLY" />
+		</h2>
+		<p:commandButton action="/pages/public/index.xhtml"
+		value="#{bundle.accessDeniedButton}" ajax="false" immediate="true" />
+		<h:outputText value="#{indexBean.userInput}"/>
+	</h:form>
+</h:body>
+</html>

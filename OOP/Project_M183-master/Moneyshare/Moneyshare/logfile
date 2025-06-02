@@ -1,0 +1,639 @@
+[06/Jan/2019 21:13:11] ERROR [bankaccount.views:97]  Error Account Bankaccount: test11 13 Bankaccount: test11 13
+[06/Jan/2019 21:29:09] ERROR [django.request:228] Internal Server Error: /app/user/request/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 168, in get
+    return super().get(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: __init__() got an unexpected keyword argument 'user'
+[06/Jan/2019 21:29:09] ERROR [django.server:136] "GET /app/user/request/ HTTP/1.1" 500 98274
+[06/Jan/2019 21:29:56] ERROR [django.request:228] Internal Server Error: /app/user/request/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 168, in get
+    return super().get(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: __init__() got an unexpected keyword argument 'user'
+[06/Jan/2019 21:29:56] ERROR [django.server:136] "GET /app/user/request/ HTTP/1.1" 500 98590
+[06/Jan/2019 21:31:30] ERROR [django.request:228] Internal Server Error: /app/user/request/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 168, in get
+    return super().get(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: __init__() got an unexpected keyword argument 'user'
+[06/Jan/2019 21:31:30] ERROR [django.server:136] "GET /app/user/request/ HTTP/1.1" 500 98590
+[06/Jan/2019 21:32:04] ERROR [django.request:228] Internal Server Error: /app/user/request/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 168, in get
+    return super().get(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: __init__() got an unexpected keyword argument 'user'
+[06/Jan/2019 21:32:04] ERROR [django.server:136] "GET /app/user/request/ HTTP/1.1" 500 98590
+[06/Jan/2019 21:32:17] ERROR [django.request:228] Internal Server Error: /app/user/request/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 168, in get
+    return super().get(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: __init__() got an unexpected keyword argument 'user'
+[06/Jan/2019 21:32:17] ERROR [django.server:136] "GET /app/user/request/ HTTP/1.1" 500 98590
+[06/Jan/2019 21:32:48] ERROR [django.request:228] Internal Server Error: /app/user/request/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 168, in get
+    return super().get(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: __init__() got an unexpected keyword argument 'user'
+[06/Jan/2019 21:32:48] ERROR [django.server:136] "GET /app/user/request/ HTTP/1.1" 500 98590
+[06/Jan/2019 21:33:10] ERROR [django.request:228] Internal Server Error: /app/user/request/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 168, in get
+    return super().get(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: __init__() got an unexpected keyword argument 'user'
+[06/Jan/2019 21:33:10] ERROR [django.server:136] "GET /app/user/request/ HTTP/1.1" 500 98274
+[06/Jan/2019 21:34:01] ERROR [django.request:228] Internal Server Error: /app/user/request/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 168, in get
+    return super().get(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: __init__() got an unexpected keyword argument 'user'
+[06/Jan/2019 21:34:01] ERROR [django.server:136] "GET /app/user/request/ HTTP/1.1" 500 98590
+[06/Jan/2019 21:35:53] ERROR [django.request:228] Internal Server Error: /app/user/request/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 141, in post
+    if form.is_valid():
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/forms/forms.py", line 185, in is_valid
+    return self.is_bound and not self.errors
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/forms/forms.py", line 180, in errors
+    self.full_clean()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/forms/forms.py", line 383, in full_clean
+    self._post_clean()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/forms/models.py", line 398, in _post_clean
+    self.instance = construct_instance(self, self.instance, opts.fields, opts.exclude)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/forms/models.py", line 60, in construct_instance
+    f.save_form_data(instance, cleaned_data[f.name])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 854, in save_form_data
+    setattr(instance, self.name, data)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/fields/related_descriptors.py", line 210, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "<Bankaccoount: Bankaccount: roeti 2>": "Antrag.User" must be a "User" instance.
+[06/Jan/2019 21:35:53] ERROR [django.server:136] "POST /app/user/request/ HTTP/1.1" 500 121692
+[06/Jan/2019 21:36:04] ERROR [django.request:228] Internal Server Error: /app/user/request/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 141, in post
+    if form.is_valid():
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/forms/forms.py", line 185, in is_valid
+    return self.is_bound and not self.errors
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/forms/forms.py", line 180, in errors
+    self.full_clean()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/forms/forms.py", line 383, in full_clean
+    self._post_clean()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/forms/models.py", line 398, in _post_clean
+    self.instance = construct_instance(self, self.instance, opts.fields, opts.exclude)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/forms/models.py", line 60, in construct_instance
+    f.save_form_data(instance, cleaned_data[f.name])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 854, in save_form_data
+    setattr(instance, self.name, data)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/fields/related_descriptors.py", line 210, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "<Bankaccoount: Bankaccount: roeti 2>": "Antrag.User" must be a "User" instance.
+[06/Jan/2019 21:36:04] ERROR [django.server:136] "POST /app/user/request/ HTTP/1.1" 500 121692
+[06/Jan/2019 21:40:04] ERROR [django.request:228] Internal Server Error: /app/user/request/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 168, in get
+    return super().get(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+  File "/Users/etienneroulet/Documents/github_new/Project_M183/Moneyshare/bankaccount/forms.py", line 31, in __init__
+    self.fields['User'].queryset = User.objects.filter(User=user)
+NameError: name 'User' is not defined
+[06/Jan/2019 21:40:04] ERROR [django.server:136] "GET /app/user/request/ HTTP/1.1" 500 101939
+[06/Jan/2019 21:43:10] ERROR [django.request:228] Internal Server Error: /app/user/request/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/forms/forms.py", line 304, in as_p
+    errors_on_separate_row=True,
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/forms/forms.py", line 202, in _html_output
+    top_errors = self.non_field_errors()  # Errors that should be displayed above all fields.
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/forms/forms.py", line 313, in non_field_errors
+    return self.errors.get(NON_FIELD_ERRORS, self.error_class(error_class='nonfield'))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/forms/forms.py", line 179, in errors
+    if self._errors is None:
+AttributeError: 'AntragsForm' object has no attribute '_errors'
+[06/Jan/2019 21:43:10] ERROR [django.server:136] "GET /app/user/request/ HTTP/1.1" 500 125447
+[06/Jan/2019 21:44:20] ERROR [django.request:228] Internal Server Error: /app/user/request/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/forms/forms.py", line 304, in as_p
+    errors_on_separate_row=True,
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/forms/forms.py", line 202, in _html_output
+    top_errors = self.non_field_errors()  # Errors that should be displayed above all fields.
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/forms/forms.py", line 313, in non_field_errors
+    return self.errors.get(NON_FIELD_ERRORS, self.error_class(error_class='nonfield'))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/forms/forms.py", line 179, in errors
+    if self._errors is None:
+AttributeError: 'AntragsForm' object has no attribute '_errors'
+[06/Jan/2019 21:44:20] ERROR [django.server:136] "GET /app/user/request/ HTTP/1.1" 500 125447
+[06/Jan/2019 21:44:31] ERROR [django.request:228] Internal Server Error: /app/user/request/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 987, in render
+    output = self.filter_expression.resolve(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/template/base.py", line 858, in _resolve_lookup
+    current = current()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/forms/forms.py", line 304, in as_p
+    errors_on_separate_row=True,
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/forms/forms.py", line 202, in _html_output
+    top_errors = self.non_field_errors()  # Errors that should be displayed above all fields.
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/forms/forms.py", line 313, in non_field_errors
+    return self.errors.get(NON_FIELD_ERRORS, self.error_class(error_class='nonfield'))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/forms/forms.py", line 179, in errors
+    if self._errors is None:
+AttributeError: 'AntragsForm' object has no attribute '_errors'
+[06/Jan/2019 21:44:31] ERROR [django.server:136] "GET /app/user/request/ HTTP/1.1" 500 125447
+[06/Jan/2019 21:45:02] ERROR [django.request:228] Internal Server Error: /app/user/request/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 168, in get
+    return super().get(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: __init__() got an unexpected keyword argument 'user'
+[06/Jan/2019 21:45:02] ERROR [django.server:136] "GET /app/user/request/ HTTP/1.1" 500 98590
+[06/Jan/2019 21:46:29] ERROR [django.request:228] Internal Server Error: /app/user/request/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 168, in get
+    return super().get(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: __init__() got an unexpected keyword argument 'user'
+[06/Jan/2019 21:46:29] ERROR [django.server:136] "GET /app/user/request/ HTTP/1.1" 500 98590
+[06/Jan/2019 21:47:20] ERROR [django.request:228] Internal Server Error: /app/user/request/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 168, in get
+    return super().get(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: __init__() got an unexpected keyword argument 'user'
+[06/Jan/2019 21:47:20] ERROR [django.server:136] "GET /app/user/request/ HTTP/1.1" 500 98590
+[06/Jan/2019 21:47:44] ERROR [django.request:228] Internal Server Error: /app/user/request/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 168, in get
+    return super().get(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+  File "/Users/etienneroulet/Documents/github_new/Project_M183/Moneyshare/bankaccount/forms.py", line 32, in __init__
+    self.fields['User'].queryset = User.objects.filter(User=user)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1164, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1028, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1389, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'User' into field. Choices are: antrag, bankaccoount, date_joined, email, first_name, groups, id, is_active, is_staff, is_superuser, last_login, last_name, logentry, password, user_permissions, username
+[06/Jan/2019 21:47:44] ERROR [django.server:136] "GET /app/user/request/ HTTP/1.1" 500 142403
+[06/Jan/2019 21:48:40] ERROR [django.request:228] Internal Server Error: /app/user/request/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 168, in get
+    return super().get(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+  File "/Users/etienneroulet/Documents/github_new/Project_M183/Moneyshare/bankaccount/forms.py", line 32, in __init__
+    self.fields['username'].queryset = User.objects.filter(User=user)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1164, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1028, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1389, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'User' into field. Choices are: antrag, bankaccoount, date_joined, email, first_name, groups, id, is_active, is_staff, is_superuser, last_login, last_name, logentry, password, user_permissions, username
+[06/Jan/2019 21:48:40] ERROR [django.server:136] "GET /app/user/request/ HTTP/1.1" 500 142411
+[06/Jan/2019 21:48:46] ERROR [django.request:228] Internal Server Error: /app/user/request/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 168, in get
+    return super().get(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 133, in get
+    return self.render_to_response(self.get_context_data())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 66, in get_context_data
+    kwargs['form'] = self.get_form()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/views/generic/edit.py", line 33, in get_form
+    return form_class(**self.get_form_kwargs())
+  File "/Users/etienneroulet/Documents/github_new/Project_M183/Moneyshare/bankaccount/forms.py", line 32, in __init__
+    self.fields['username'].queryset = User.objects.filter(User=user)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1164, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1028, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1389, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'User' into field. Choices are: antrag, bankaccoount, date_joined, email, first_name, groups, id, is_active, is_staff, is_superuser, last_login, last_name, logentry, password, user_permissions, username
+[06/Jan/2019 21:48:46] ERROR [django.server:136] "GET /app/user/request/ HTTP/1.1" 500 142415

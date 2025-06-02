@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core" xmlns:p="http://primefaces.org/ui">
+<h:body>
+	<ui:composition template="/pages/public/templates/master.xhtml">
+		<ui:define name="divMain">
+
+ 
+ <h:form>
+   <h:form id="Fachteamupdate" prependId="false">
+			<h:panelGrid columns="2">
+				<h:outputText value="Set your Fachteam" />
+				<br></br>	
+				<h:inputText value="#{userBean.user.fachteam}" required="true" label="Fachteam" />
+		
+				<p:commandButton value="#{bundle.update}" icon="ui-icon-plus"
+					action="#{userBean.updateFachteam()}"
+					oncomplete="PF('updateInfos').show();" ></p:commandButton>
+				<h:outputText value="Set your Username" />	
+				<br></br>	
+				<h:inputText value="#{userBean.user.username}" required="true" label="Fachteam" />
+		
+				<p:commandButton value="#{bundle.update}" icon="ui-icon-plus"
+					action="#{userBean.updateUsername()}"
+					oncomplete="location.reload();" ></p:commandButton>
+					
+				<h:outputText value="Set your Profile Settings Info"/>
+				<br></br>	
+				
+				<h:inputText value="#{userBean.user.infos}" required="true" label="Fachteam" />
+		
+				
+				<p:commandButton value="#{bundle.update}" icon="ui-icon-plus"
+					action="#{userBean.updateInfos()}"
+					oncomplete="PF('updateInfos').show();"  ></p:commandButton>
+			</h:panelGrid>
+		</h:form>
+</h:form>
+	<p:dialog widgetVar="updateInfos" header="Update has been sucessfull"  showEffect="explode" hideEffect="bounce"
+		id="updateInfos" height="80" width="400" modal="true"
+		closable="true" draggable="false" resizable="false">
+		<h:outputText value="Your Profil is now setted"/>
+	</p:dialog>
+
+		</ui:define>
+	</ui:composition>
+</h:body>
+
+</html>

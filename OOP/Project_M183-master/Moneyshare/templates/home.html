@@ -1,0 +1,24 @@
+<!-- templates/home.html-->
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+  Hi {{ user.username }}!
+  <li><a href="{% url 'friendspay' %}">Friendspay</a></li>
+  {% if perms.bankaccount.can_bankeröffnung %}
+  <li><a href="{% url 'Kontoeröffnen' %}">Kontoeröffnen</a></li>
+  {% endif %}
+  {% if perms.bankaccount.can_change_bankaccount %}
+  <li><a href="{% url 'Bankaccounteröffnung' %}">Bankaccounteröffnung</a></li>
+  {% endif %}
+  {% if perms.bankaccount.can_add_Antrag %}
+  <li><a href="{% url 'request' %}">Requeset Bankaccount</a></li>
+  {% endif %}
+  <p><a href="{% url 'logout' %}">logout</a></p>
+{% else %}
+  <p>You are not logged in</p>
+  <a href="{% url 'login' %}">login</a>
+{% endif %}
+{% endblock %}

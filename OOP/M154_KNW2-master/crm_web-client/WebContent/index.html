@@ -1,0 +1,38 @@
+<html>
+   <head>
+      <meta http-equiv='X-UA-Compatible' content='IE=Edge' />
+      <title>crm-app</title>
+      <link rel='stylesheet' type='text/css' href='style/styles.css'>
+   </head>
+   <body>
+      <br />
+      <h1>Kunde erstellen</h1>
+      <form method="get" action="crm-app">
+         <input type="hidden" name="service" value= "CreateCustomerService"/>
+         <input type="hidden" name="view" value= "CreateCustomerView"/>
+         <label>Bitte Vorname des Kunden eingeben:</label>
+         <br /><input type="text" name="firstnameText"/>
+         <br />
+         <br />
+         <label>Bitte Nachname des Kunden eingeben:</label>
+         <br />
+         <input type="text" name="nameText"/>
+         <p/>
+            <input type="submit"/>
+      </form>
+      <br />
+      <br />
+      <br />
+      <h1>Kunde suchen</h1>
+      <form method="get" action="crm-app">
+         <input type="hidden" name="service" value= "ReadCustomerService"/>
+         <input type="hidden" name="view" value= "ReadCustomerView"/>
+         <label>Bitte Kundennummer eingeben:</label>
+         <br />
+         <input type="text" name="customerId"/>
+         <p/>
+            <input value=" Suchen " type="submit"/>
+      </form>
+      <br />
+   </body>
+</html>

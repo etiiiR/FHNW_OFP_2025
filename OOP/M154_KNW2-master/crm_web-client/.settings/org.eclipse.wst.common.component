@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="crm_web-client">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/work"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="crm_business.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/crm_business/crm_business">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="crm_persistence.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/crm_persistence/crm_persistence">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Giniality-Education-WebApp-Framework.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Giniality-Education-WebApp-Framework/Giniality-Education-WebApp-Framework">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/crm_web-client/WEB-INF/classes"/>
+        <property name="context-root" value="crm_app"/>
+    </wb-module>
+</project-modules>
