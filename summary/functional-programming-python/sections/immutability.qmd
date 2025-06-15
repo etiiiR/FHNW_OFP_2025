@@ -1,0 +1,17 @@
+# Immutability in Functional Programming
+
+Immutability is a core concept in functional programming that refers to the inability to change a data structure after it has been created. This principle helps to avoid side effects and makes reasoning about code easier. In Python, while most built-in data types are mutable (like lists and dictionaries), there are immutable types such as tuples and frozensets that can be utilized to adhere to functional programming principles.
+
+## Why Immutability Matters
+
+1. **Predictability**: Immutable objects cannot be altered, which means that their state remains consistent throughout their lifetime. This predictability simplifies debugging and reasoning about code.
+
+2. **Thread Safety**: Since immutable objects cannot change, they are inherently thread-safe. This means that multiple threads can access the same immutable object without the risk of data corruption.
+
+3. **Functional Purity**: Immutability supports the concept of pure functions, which always produce the same output for the same input without side effects.
+
+## Working with Immutable Data Structures in Python
+
+### Tuples
+
+Tuples are one of the simplest immutable data structures in Python. Once a tuple is created, its elements cannot be modified.

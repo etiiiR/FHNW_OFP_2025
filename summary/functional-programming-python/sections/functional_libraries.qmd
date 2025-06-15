@@ -1,0 +1,11 @@
+# Functional Libraries in Python
+
+Functional programming in Python is greatly enhanced by several libraries that provide tools and utilities to facilitate functional programming paradigms. This section will explore two of the most important libraries: `functools` and `itertools`.
+
+## functools
+
+The `functools` module is a standard library in Python that provides higher-order functions and operations on callable objects. It includes utilities for memoization, partial function application, and more.
+
+### Example: Using `functools.reduce`
+
+The `reduce` function is used to apply a rolling computation to sequential pairs of values in a list. Here’s an example of how to use it:

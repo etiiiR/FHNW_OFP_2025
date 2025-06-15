@@ -1,0 +1,46 @@
+title: "Functional Programming in Python"
+author: "Your Name"
+format:
+  html:
+    toc: true
+    toc-location: left
+    number-sections: true
+  pdf:
+    toc: true
+    number-sections: true
+execute:
+  echo: false
+  warning: false
+  error: false
+  message: false
+  results: "hold"
+  include: true
+  cache: false
+editor:
+  theme: "default"
+  font-size: 12pt
+  line-numbers: true
+  code-fold: true
+  code-line-numbers: true
+  code-blocks: true
+  code-chunk-options:
+    echo: true
+    eval: true
+    results: "markup"
+    warning: false
+    error: false
+    message: false
+    include: true
+    cache: false
+bibliography: bibliography.bib
+css: styles.css
+image: images/fp_concept_map.svg
+sections:
+  - introduction.qmd
+  - first_class_functions.qmd
+  - pure_functions.qmd
+  - immutability.qmd
+  - higher_order_functions.qmd
+  - recursion.qmd
+  - comprehensions.qmd
+  - functional_libraries.qmd

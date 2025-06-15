@@ -1,0 +1,19 @@
+# Pure Functions in Python
+
+## What are Pure Functions?
+
+Pure functions are functions that have two main characteristics:
+
+1. **Deterministic**: Given the same input, a pure function will always return the same output. This means that the function's output is solely determined by its input values, without any side effects.
+
+2. **No Side Effects**: Pure functions do not cause any observable side effects. This means they do not modify any external state or variables, nor do they perform any actions that affect the outside world (like printing to the console or writing to a file).
+
+## Benefits of Pure Functions
+
+- **Easier to Test**: Since pure functions are deterministic, they can be easily tested with known inputs and expected outputs.
+- **Predictability**: The absence of side effects makes the behavior of pure functions predictable, which is crucial for debugging and reasoning about code.
+- **Reusability**: Pure functions can be reused across different parts of a program without worrying about unintended interactions with other parts of the code.
+
+## Example of a Pure Function
+
+Here is a simple example of a pure function in Python:

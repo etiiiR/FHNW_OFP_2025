@@ -1,0 +1,25 @@
+# Recursion in Functional Programming
+
+Recursion is a fundamental concept in functional programming that allows a function to call itself in order to solve a problem. This technique is particularly useful for tasks that can be defined in terms of smaller subproblems. In this section, we will explore the principles of recursion, its advantages, and provide coding examples to illustrate its use in Python.
+
+## What is Recursion?
+
+Recursion occurs when a function calls itself directly or indirectly to solve a problem. A recursive function typically has two main components:
+
+1. **Base Case**: This is the condition under which the recursion stops. It prevents the function from calling itself indefinitely.
+2. **Recursive Case**: This is where the function calls itself with a modified argument, moving towards the base case.
+
+## Advantages of Recursion
+
+- **Simplicity**: Recursive solutions can be more straightforward and easier to understand than their iterative counterparts.
+- **Reduced Code Size**: Recursive functions can often be written in fewer lines of code.
+- **Natural Fit for Certain Problems**: Problems like tree traversals, factorial calculations, and Fibonacci sequence generation are naturally recursive.
+
+## Example 1: Factorial Calculation
+
+The factorial of a non-negative integer n is the product of all positive integers less than or equal to n. It can be defined recursively as follows:
+
+- Base Case: `factorial(0) = 1`
+- Recursive Case: `factorial(n) = n * factorial(n - 1)`
+
+Here is the implementation in Python:

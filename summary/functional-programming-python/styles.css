@@ -1,0 +1,77 @@
+/* styles.css */
+
+/* General styles for the Quarto document */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    color: #333;
+}
+
+/* Header styles */
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+/* Code block styles */
+pre {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+/* Inline code styles */
+code {
+    background-color: #f0f0f0;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+/* Link styles */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* List styles */
+ul {
+    margin-left: 20px;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Footer styles */
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}

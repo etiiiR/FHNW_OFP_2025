@@ -1,0 +1,8 @@
+def greet(name):
+    return f"Hello, {name}!"
+
+# Assigning the function to a variable
+greeting = greet
+
+# Calling the function using the variable
+print(greeting("Alice"))  # Output: Hello, Alice!

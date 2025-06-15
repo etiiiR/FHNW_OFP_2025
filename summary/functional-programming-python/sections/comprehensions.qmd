@@ -1,0 +1,7 @@
+# Comprehensions in Python
+
+Comprehensions are a concise way to create lists, sets, and dictionaries in Python. They provide a syntactically elegant way to generate collections from existing iterables. In this section, we will explore list comprehensions, set comprehensions, and dictionary comprehensions, along with their applications in functional programming.
+
+## List Comprehensions
+
+List comprehensions allow you to create a new list by applying an expression to each item in an iterable. The basic syntax is:

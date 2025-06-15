@@ -1,0 +1,533 @@
+---
+title: "Summary of Functional Programming in Python"
+author: "Your Name"
+date: "`r Sys.Date()`"
+format: html
+---
+
+# Introduction
+
+Functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids changing state and mutable data. Python, while primarily an object-oriented language, supports functional programming features that allow developers to write cleaner and more efficient code. This document summarizes key concepts of functional programming in Python, including extensive coding examples.
+
+# Key principles of functional programming in Python:
+# 1. First-class and higher-order functions
+# 2. Pure functions
+# 3. Recursion
+# 4. Immutable data
+# 5. Lazy evaluation
+
+# First-Class Functions
+
+In Python, functions are first-class citizens, meaning they can be passed around as arguments, returned from other functions, and assigned to variables. This section provides examples of first-class functions.
+
+```python
+def greeting(name):
+    return f"Hello, {name}!"
+
+# Assigning function to a variable
+say_hello = greeting
+
+# Using the function through variable
+print(say_hello("Alice"))  # Output: Hello, Alice!
+
+# Storing functions in data structures
+function_list = [greeting, str.upper, str.lower]
+for func in function_list:
+    print(func("Test"))  # Outputs: Hello, Test!, TEST, test
+```
+
+# Pure Functions
+
+Pure functions are those that have no side effects and return the same output given the same input. This section discusses pure functions and their benefits.
+
+```python
+# Pure function example
+def add(a, b):
+    return a + b
+
+# Impure function example (has side effects)
+total = 0
+def add_to_total(value):
+    global total
+    total += value
+    return total
+
+# Using pure functions helps with:
+# - Testing
+# - Parallelization
+# - Memoization
+# - Referential transparency
+```
+
+# Regular function
+def square(x):
+    return x * x
+
+# Equivalent lambda function
+square_lambda = lambda x: x * x
+
+# Using lambda in higher-order functions
+numbers = [1, 2, 3, 4, 5]
+squared = list(map(lambda x: x * x, numbers))
+print(squared)  # [1, 4, 9, 16, 25]
+
+# Lambda with multiple arguments
+multiply = lambda x, y: x * y
+print(multiply(3, 4))  # 12
+
+# Using map to apply a function to each item in an iterable
+numbers = [1, 2, 3, 4, 5]
+squared = list(map(lambda x: x * x, numbers))
+print(squared)  # [1, 4, 9, 16, 25]
+
+# Map with multiple iterables
+list1 = [1, 2, 3]
+list2 = [10, 20, 30]
+result = list(map(lambda x, y: x + y, list1, list2))
+print(result)  # [11, 22, 33]
+
+# Using filter to select items based on a predicate function
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+print(even_numbers)  # [2, 4, 6, 8, 10]
+
+# Custom filter function
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+primes = list(filter(is_prime, range(1, 50)))
+print(primes)  # [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
+```
+
+# Reducing Functions
+
+Reducing functions apply a given function cumulatively to the items of an iterable, from left to right, so as to reduce the iterable to a single value. Python's `functools.reduce` is a typical reducing function. This section explores reducing functions with examples.
+
+```python
+from functools import reduce
+
+# Computing the sum of a list
+numbers = [1, 2, 3, 4, 5]
+sum_result = reduce(lambda x, y: x + y, numbers)
+print(sum_result)  # 15
+
+# Computing the product of a list
+product_result = reduce(lambda x, y: x * y, numbers)
+print(product_result)  # 120
+
+# More complex example: Maximum element
+max_value = reduce(lambda x, y: x if x > y else y, numbers)
+print(max_value)  # 5
+```
+
+# List Comprehensions
+
+List comprehensions provide a concise way to create lists. It consists of brackets containing an expression followed by a `for` clause, then zero or more `for` or `if` clauses. This section illustrates the use of list comprehensions in Python.
+
+```python
+# Basic list comprehension
+squares = [x**2 for x in range(10)]
+print(squares)  # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+# List comprehension with condition
+even_squares = [x**2 for x in range(10) if x % 2 == 0]
+print(even_squares)  # [0, 4, 16, 36, 64]
+
+# Nested list comprehension
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+flattened = [num for row in matrix for num in row]
+print(flattened)  # [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# Transposing a matrix
+transposed = [[row[i] for row in matrix] for i in range(len(matrix[0]))]
+print(transposed)  # [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
+
+# Dictionary comprehension
+squares_dict = {x: x**2 for x in range(5)}
+print(squares_dict)  # {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
+
+# Set comprehension
+squares_set = {x**2 for x in range(-5, 5)}
+print(squares_set)  # {0, 1, 4, 9, 16, 25}
+
+# Conditional dictionary comprehension
+even_squares_dict = {x: x**2 for x in range(10) if x % 2 == 0}
+print(even_squares_dict)  # {0: 0, 2: 4, 4: 16, 6: 36, 8: 64}
+```
+
+# Recursion
+
+Recursion is a technique in computer science in which a function calls itself. It is used to solve problems that can be broken down into smaller, similar problems. This section covers recursion in Python with examples.
+
+```python
+# Factorial using recursion
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+print(factorial(5))  # 120
+
+# Fibonacci sequence using recursion
+def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+
+# Generate first 10 Fibonacci numbers
+fib_series = [fibonacci(i) for i in range(10)]
+print(fib_series)  # [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+
+# Tail recursion optimization with a helper function
+def factorial_tail(n, accumulator=1):
+    if n == 0 or n == 1:
+        return accumulator
+    else:
+        return factorial_tail(n - 1, n * accumulator)
+
+print(factorial_tail(5))  # 120
+```
+
+# Immutable Data
+
+Immutable data types are those that cannot be modified after they are created. Python has built-in immutable types
+# - int, float, bool, str, tuple, frozenset
+
+```python
+# Working with immutable data structures
+import copy
+
+# Creating a new list instead of modifying
+original = [1, 2, 3]
+new_list = original + [4]  # Creates a new list
+print(original)  # [1, 2, 3]
+print(new_list)  # [1, 2, 3, 4]
+
+# Deep copying to avoid mutation
+nested = [[1, 2], [3, 4]]
+deep_copy = copy.deepcopy(nested)
+deep_copy[0][0] = 99
+print(nested)     # [[1, 2], [3, 4]]
+print(deep_copy)  # [[99, 2], [3, 4]]
+
+# Using tuples for immutable sequences
+point = (10, 20)
+# point[0] = 5  # This would raise a TypeError
+
+# Using named tuples for readable immutable data
+from collections import namedtuple
+Person = namedtuple('Person', ['name', 'age', 'email'])
+alice = Person('Alice', 30, 'alice@example.com')
+print(alice.name)  # Alice
+# alice.age = 31  # This would raise an AttributeError
+
+```
+# Iterators and Generators
+
+Iterators are objects that represent a stream of data; they return one element at a time from the underlying data source. Generators are a type of iterator, defined using a function that yields values one at a time. This section explores iterators and generators in Python.
+
+```python
+# Basic iterator example
+my_list = [1, 2, 3]
+iterator = iter(my_list)
+
+print(next(iterator))  # 1
+print(next(iterator))  # 2
+print(next(iterator))  # 3
+# print(next(iterator))  # StopIteration
+
+# Generator function
+def countdown(n):
+    print("Starting countdown")
+    while n > 0:
+        yield n
+        n -= 1
+    print("Countdown finished")
+
+# Using the generator
+gen = countdown(5)
+
+print(next(gen))  # Starting countdown (prints during first call)
+# Pauses here, state is saved
+print(next(gen))  # 4
+print(next(gen))  # 3
+
+# Converting a generator expression to a list
+squared_gen = (x**2 for x in range(10))
+squared_list = list(squared_gen)
+print(squared_list)  # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+# Generator for Fibonacci numbers
+def fibonacci_gen(limit):
+    a, b = 0, 1
+    while a < limit:
+        yield a
+        a, b = b, a + b
+
+# Using the Fibonacci generator
+for num in fibonacci_gen(1000):
+    print(num, end=", ")
+```
+
+# Working with Files
+
+Python provides built-in functions to work with files, allowing to read from and write to files easily. This section provides examples of file operations in Python.
+
+```python
+# Writing to a file
+with open('example.txt', 'w') as file:
+    file.write("Hello, world!\n")
+    file.write("Welcome to file handling in Python.\n")
+
+# Reading from a file
+with open('example.txt', 'r') as file:
+    content = file.read()
+    print(content)
+
+# Appending to a file
+with open('example.txt', 'a') as file:
+    file.write("Appending a new line.\n")
+
+# Reading lines from a file
+with open('example.txt', 'r') as file:
+    lines = file.readlines()
+    for line in lines:
+        print(line.strip())
+```
+
+# Using Libraries and Frameworks
+
+Python has a rich ecosystem of libraries and frameworks that facilitate functional programming. This section briefly introduces some popular libraries and frameworks.
+
+```python
+# NumPy: Library for numerical computing
+import numpy as np
+
+# Creating arrays
+arr = np.array([1, 2, 3, 4, 5])
+print(arr)
+
+# Array operations
+print(np.mean(arr))
+print(np.sum(arr))
+
+# Pandas: Data analysis library
+import pandas as pd
+
+# Creating a DataFrame
+data = {'Name': ['Alice', 'Bob', 'Charlie'], 'Age': [25, 30, 35]}
+df = pd.DataFrame(data)
+
+# DataFrame operations
+print(df.head())
+print(df['Age'].mean())
+
+# Matplotlib: Plotting library
+import matplotlib.pyplot as plt
+
+# Simple line plot
+plt.plot([1, 2, 3, 4], [10, 20, 25, 30])
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('Sample Plot')
+plt.show()
+```
+
+# Conclusion
+
+Functional programming in Python offers powerful tools and techniques for writing clean, efficient, and maintainable code. By leveraging first-class functions, pure functions, recursion, immutable data, and lazy evaluation, developers can create robust Python applications. The examples and concepts presented in this document provide a foundation for further exploration and mastery of functional programming in Python.
+
+# Advanced Functional Programming Concepts
+
+This section covers some advanced functional programming concepts and techniques in Python, including function annotations, partial functions, and function caching.
+
+```python
+import functools
+import statistics
+from typing import List, Dict, Callable, TypeVar, Any, Tuple
+
+T = TypeVar('T')
+U = TypeVar('U')
+
+# Sample data: Student test scores
+students = [
+    {'name': 'Alice', 'scores': [88, 92, 95], 'grade': 'A'},
+    {'name': 'Bob', 'scores': [75, 80, 85], 'grade': 'B'},
+    {'name': 'Charlie', 'scores': [62, 71, 77], 'grade': 'C'},
+    {'name': 'David', 'scores': [59, 54, 60], 'grade': 'D'},
+    {'name': 'Eve', 'scores': [45, 52, 49], 'grade': 'F'},
+]
+
+# Compute average score for each student
+def compute_average(student: Dict) -> Dict:
+    student = student.copy()  # Create a new copy to maintain immutability
+    student['average'] = statistics.mean(student['scores'])
+    return student
+
+# Filter students based on a criterion
+def filter_by_grade(students: List[Dict], grades: List[str]) -> List[Dict]:
+    return list(filter(lambda s: s['grade'] in grades, students))
+
+# Sort students by average score
+def sort_by_average(students: List[Dict]) -> List[Dict]:
+    return sorted(students, key=lambda s: s['average'], reverse=True)
+
+# Extract specific fields
+def extract_fields(students: List[Dict], fields: List[str]) -> List[Dict]:
+    return [{field: student[field] for field in fields} 
+            for student in students]
+
+# Pipeline implementation using function composition
+def pipeline(*funcs):
+    def inner(x):
+        result = x
+        for f in funcs:
+            result = f(result)
+        return result
+    return inner
+
+# Build our processing pipeline
+process_students = pipeline(
+    lambda s: list(map(compute_average, s)),
+    lambda s: filter_by_grade(s, ['A', 'B']),
+    lambda s: sort_by_average(s),
+    lambda s: extract_fields(s, ['name', 'average'])
+)
+
+# Execute the pipeline
+result = process_students(students)
+print(result)
+
+# Memoization example
+@functools.lru_cache(maxsize=None)
+def fibonacci_memo(n: int) -> int:
+    if n <= 1:
+        return n
+    else:
+        return fibonacci_memo(n-1) + fibonacci_memo(n-2)
+
+# Test memoized Fibonacci
+print([fibonacci_memo(i) for i in range(10)])
+
+# Manual currying
+def curried_add(x):
+    def add_y(y):
+        return x + y
+    return add_y
+
+add_5 = curried_add(5)
+print(add_5(3))  # 8
+
+# Generic curry implementation
+def curry(func):
+    def curried(*args):
+        if len(args) >= func.__code__.co_argcount:
+            return func(*args)
+        return lambda *more_args: curried(*(args + more_args))
+    return curried
+
+@curry
+def add3(a, b, c):
+    return a + b + c
+
+# Different ways to call the curried function
+print(add3(1)(2)(3))  # 6
+print(add3(1, 2)(3))  # 6
+print(add3(1)(2, 3))  # 6
+
+# Simple decorator
+def logger(func):
+    def wrapper(*args, **kwargs):
+        print(f"Calling {func.__name__} with {args}, {kwargs}")
+        result = func(*args, **kwargs)
+        print(f"{func.__name__} returned {result}")
+        return result
+    return wrapper
+
+@logger
+def add(a, b):
+    return a + b
+
+add(3, 5)  # Output includes log statements
+
+# Decorator with parameters
+def repeat(n):
+    def decorator(func):
+        def wrapper(*args, **kwargs):
+            results = []
+            for _ in range(n):
+                results.append(func(*args, **kwargs))
+            return results
+        return wrapper
+    return decorator
+
+@repeat(3)
+def say_hello(name):
+    return f"Hello {name}!"
+
+print(say_hello("World"))  # ['Hello World!', 'Hello World!', 'Hello World!']
+
+# Maybe monad-like implementation
+class Maybe:
+    def __init__(self, value=None):
+        self.value = value
+    
+    @staticmethod
+    def just(value):
+        return Maybe(value)
+    
+    @staticmethod
+    def nothing():
+        return Maybe(None)
+    
+    def is_nothing(self):
+        return self.value is None
+    
+    def map(self, func):
+        if self.is_nothing():
+            return self
+        return Maybe(func(self.value))
+    
+    def flat_map(self, func):
+        if self.is_nothing():
+            return self
+        return func(self.value)
+    
+    def __str__(self):
+        if self.is_nothing():
+            return "Nothing"
+        return f"Just {self.value}"
+
+# Using the Maybe monad
+def divide(a, b):
+    if b == 0:
+        return Maybe.nothing()
+    return Maybe.just(a / b)
+
+def sqrt(x):
+    if x < 0:
+        return Maybe.nothing()
+    return Maybe.just(x ** 0.5)
+
+# Chaining operations safely
+result = Maybe.just(16) \
+    .flat_map(lambda x: divide(x, 4)) \
+    .flat_map(sqrt)
+
+print(result)  # Just 2.0
+
+# Error case
+error_result = Maybe.just(16) \
+    .flat_map(lambda x: divide(x, 0)) \
+    .flat_map(sqrt)
+
+print(error_result)  # Nothing
+```
+
